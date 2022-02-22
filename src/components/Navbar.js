@@ -1,14 +1,12 @@
 import { Link } from 'react-router-dom';
-
-// styles
-import s from './Navbar.module.scss';
+import styled from 'styled-components';
 
 function Navbar() {
   return (
-    <nav className={s.navbar}>
+    <StyledNavbar sc>
       <ul>
-        <li className={s.title}>myMoney</li>
-        <div className={s.wrapper}>
+        <li className='title'>myMoney</li>
+        <div className='wrapper'>
           <li>
             <Link to='login'>Login</Link>
           </li>
@@ -17,8 +15,43 @@ function Navbar() {
           </li>
         </div>
       </ul>
-    </nav>
+    </StyledNavbar>
   );
 }
+
+const StyledNavbar = styled.nav`
+  width: 100%;
+  background: #effaf0;
+  padding: 15px 10px;
+  box-sizing: border-box;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 80%;
+
+    .wrapper {
+      display: flex;
+    }
+
+    li {
+      margin: 0 16px;
+    }
+
+    a {
+      color: #333;
+      text-decoration: none;
+      font-weight: 500;
+    }
+  }
+
+  .title {
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 1.4em;
+  }
+`;
 
 export default Navbar;
