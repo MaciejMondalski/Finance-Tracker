@@ -5,13 +5,15 @@ function Navbar() {
   return (
     <StyledNavbar sc>
       <ul>
-        <li className='title'>myMoney</li>
+        <li className='title'>
+          <Link to='/'>Finance Tracker</Link>
+        </li>
         <div className='wrapper'>
           <li>
             <Link to='login'>Login</Link>
           </li>
           <li>
-            <Link to='signup'>Signup</Link>
+            <Link to='signup'>Sign up</Link>
           </li>
         </div>
       </ul>
@@ -47,7 +49,7 @@ const StyledNavbar = styled.nav`
     }
   }
 
-  .title {
+  .title a {
     font-weight: bold;
     letter-spacing: 1px;
     font-size: 1.4em;
