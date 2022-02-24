@@ -1,7 +1,10 @@
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import { useLogout } from '../hooks/useLogout';
 
 function Navbar() {
+  const { logout } = useLogout();
+
   return (
     <StyledNavbar sc>
       <ul>
@@ -14,6 +17,11 @@ function Navbar() {
           </li>
           <li>
             <Link to='signup'>Sign up</Link>
+          </li>
+          <li>
+            <button className='btn' onClick={logout}>
+              Logout
+            </button>
           </li>
         </div>
       </ul>
@@ -30,12 +38,12 @@ const StyledNavbar = styled.nav`
   ul {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin: 0 auto;
     max-width: 80%;
 
     .wrapper {
       display: flex;
+      align-items: center;
     }
 
     li {
