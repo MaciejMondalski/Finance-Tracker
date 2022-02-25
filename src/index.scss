@@ -6,7 +6,13 @@ body {
   margin: 0;
   font-size: 1.1em;
 }
-ul, li, p, h1, h2, h3, h4 {
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4 {
   margin: 0;
   padding: 0;
 }
@@ -15,15 +21,15 @@ ul {
 }
 .btn {
   background: none;
-  border: 2px solid #1f9751;
+  border: 2px solid #2c6eac;
   padding: 6px 12px;
   border-radius: 4px;
-  color: #1f9751;
+  color: #2c6eac;
   font-weight: bold;
   cursor: pointer;
   font-size: 1em;
 }
 .btn:hover {
-  background: #1f9751;
+  background: #2c6eac;
   color: #fff;
 }
