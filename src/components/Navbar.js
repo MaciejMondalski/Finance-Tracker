@@ -9,7 +9,7 @@ function Navbar() {
     <StyledNavbar sc>
       <ul>
         <li className='title'>
-          <Link to='/'>Finance Tracker</Link>
+          <Link to='/'>Lean Finance</Link>
         </li>
         <div className='wrapper'>
           <li>
@@ -31,7 +31,7 @@ function Navbar() {
 
 const StyledNavbar = styled.nav`
   width: 100%;
-  background: #effaf0;
+  background: #d1e9ff;
   padding: 15px 10px;
   box-sizing: border-box;
 
