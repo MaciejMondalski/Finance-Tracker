@@ -8,7 +8,7 @@ function Navbar() {
   const { user } = useAuthContext();
 
   return (
-    <StyledNavbar sc>
+    <StyledNavbar>
       <ul>
         <li className='title'>
           <Link to='/'>Lean Finance</Link>
@@ -51,7 +51,7 @@ const StyledNavbar = styled.nav`
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    max-width: 80%;
+    max-width: 90%;
 
     .wrapper {
       display: flex;
