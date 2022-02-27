@@ -15,7 +15,7 @@ function Signup() {
 
   return (
     <StyledSignup sc onSubmit={handleSubmit}>
-      <h1>Sign up</h1>
+      <h1>Signup</h1>
       <label>
         <span>name:</span>
         <input
@@ -40,7 +40,7 @@ function Signup() {
           value={password}
         />
       </label>
-      {!isPending && <button className='btn'>Sign up</button>}
+      {!isPending && <button className='btn'>Signup</button>}
       {isPending && (
         <button className='btn' disabled>
           loading
