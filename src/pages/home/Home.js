@@ -1,15 +1,18 @@
 import styled from 'styled-components';
 import { useState } from 'react';
+import { useAuthContext } from '../../hooks/useAuthContext';
 
 // components
 import { TransactionForm } from './TransactionForm';
 
 function Home() {
+  const { user } = useAuthContext();
+
   return (
     <StyledHome>
       <div className='content'>transaction list</div>
       <div className='sidebar'>
-        <TransactionForm />
+        <TransactionForm uid={user.uid} />
       </div>
     </StyledHome>
   );
