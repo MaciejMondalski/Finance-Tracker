@@ -20,18 +20,19 @@ function Home() {
 
 const StyledHome = styled.div`
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  width: 90%;
-  max-width: 960px;
-
+  grid-template-columns: 3fr 1fr;
+  max-width: 90%;
+  padding: 15px;
+  background-color: red;
   margin: 60px auto;
 
   .content {
-    padding-right: 30px;
+    padding-left: 20px;
   }
 
   .sidebar {
-    padding-left: 30px;
+    padding-right: 20px;
+    min-width: 200px;
   }
 `;
 

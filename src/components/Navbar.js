@@ -51,7 +51,7 @@ const StyledNavbar = styled.nav`
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    max-width: 90%;
+    width: 90%;
 
     .wrapper {
       display: flex;
