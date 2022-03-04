@@ -50,6 +50,7 @@ export const TransactionForm = ({ uid }) => {
 
 const StyledForm = styled.div`
   font-size: 0.9em;
+
   form {
     padding: 20px;
     background: #2c6eac;
