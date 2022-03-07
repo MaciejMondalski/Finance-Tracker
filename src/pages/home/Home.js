@@ -1,16 +1,21 @@
 import styled from 'styled-components';
-import { useState } from 'react';
 import { useAuthContext } from '../../hooks/useAuthContext';
+import { useCollection } from '../../hooks/useCollection';
 
 // components
 import { TransactionForm } from './TransactionForm';
+import { TransactionList } from './TransactionList';
 
 function Home() {
   const { user } = useAuthContext();
-
+  const { documents, error } = useCollection('transactions');
+  console.log(documents);
   return (
     <StyledHome>
-      <div className='content'>transaction list</div>
+      <div className='content'>
+        {error && <p>{error}</p>}
+        {documents && <TransactionList transactions={documents} />}
+      </div>
       <div className='sidebar'>
         <TransactionForm uid={user.uid} />
       </div>
@@ -23,7 +28,6 @@ const StyledHome = styled.div`
   grid-template-columns: 3fr 1fr;
   max-width: 90%;
   padding: 15px;
-  background-color: red;
   margin: 60px auto;
 
   .content {
