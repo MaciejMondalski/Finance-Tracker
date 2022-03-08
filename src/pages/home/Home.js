@@ -8,8 +8,11 @@ import { TransactionList } from './TransactionList';
 
 function Home() {
   const { user } = useAuthContext();
-  const { documents, error } = useCollection('transactions');
-  console.log(documents);
+  const { documents, error } = useCollection('transactions', [
+    'uid',
+    '==',
+    user.uid,
+  ]);
   return (
     <StyledHome>
       <div className='content'>
