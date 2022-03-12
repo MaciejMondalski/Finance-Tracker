@@ -1,6 +1,9 @@
 import styled from 'styled-components';
+import { useFirestore } from '../../hooks/useFirestore';
 
 export const TransactionList = ({ transactions }) => {
+  const { deleteDocument } = useFirestore('transactions');
+
   return (
     <StyledTransactionList>
       <ul className='transactions'>
@@ -8,6 +11,7 @@ export const TransactionList = ({ transactions }) => {
           <li key={transaction.id}>
             <p className='name'>{transaction.name}</p>
             <p className='amount'>${transaction.amount}</p>
+            <button onClick={() => deleteDocument(transaction.id)}>X</button>
           </li>
         ))}
       </ul>
