@@ -28,7 +28,7 @@ function Home() {
 
 const StyledHome = styled.div`
   display: grid;
-  grid-template-columns: 2.5fr 1fr;
+  grid-template-columns: 2fr 1fr;
   width: 80%;
   padding: 15px 0;
   margin: 20px auto;
@@ -44,7 +44,6 @@ const StyledHome = styled.div`
 
   @media only screen and (max-width: 800px) {
     width: 100%;
-    grid-template-columns: 2fr 1fr;
   }
 
   @media only screen and (max-width: 600px) {
