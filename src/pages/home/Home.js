@@ -28,10 +28,10 @@ function Home() {
 
 const StyledHome = styled.div`
   display: grid;
-  grid-template-columns: 3fr 1fr;
-  max-width: 90%;
-  padding: 15px;
-  margin: 60px auto;
+  grid-template-columns: 2.5fr 1fr;
+  width: 80%;
+  padding: 15px 0;
+  margin: 20px auto;
 
   .content {
     padding-left: 20px;
@@ -40,6 +40,28 @@ const StyledHome = styled.div`
   .sidebar {
     padding-right: 20px;
     min-width: 200px;
+  }
+
+  @media only screen and (max-width: 800px) {
+    width: 100%;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  @media only screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column-reverse;
+
+    .content,
+    .sidebar {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+
+      div {
+        width: 90%;
+        max-width: 450px;
+      }
+    }
   }
 `;
 
