@@ -21,7 +21,6 @@ export const TransactionList = ({ transactions }) => {
 
 const StyledTransactionList = styled.div`
   width: 90%;
-
   li {
     padding: 20px;
     margin: 30px auto;
@@ -32,6 +31,9 @@ const StyledTransactionList = styled.div`
     overflow: hidden;
     border-left: 4px solid #2c6eac;
     transition-duration: 0.2s;
+    max-width: 600px;
+    background: rgba(245, 247, 248, 1);
+    border-radius: 4px;
 
     &:hover {
       box-shadow: 5px 5px 6px 4px rgba(50, 50, 50, 0.08);
