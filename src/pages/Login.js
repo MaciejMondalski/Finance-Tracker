@@ -44,12 +44,13 @@ const StyledLogin = styled.form`
   padding: 20px;
 
   label {
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin: 30px auto;
+    width: 100%;
   }
 
   span {
-    display: block;
     margin-bottom: 6px;
   }
 
@@ -57,7 +58,6 @@ const StyledLogin = styled.form`
     padding: 8px 6px;
     font-size: 1em;
     color: #777;
-    width: 100%;
   }
 `;
 export default Login;
