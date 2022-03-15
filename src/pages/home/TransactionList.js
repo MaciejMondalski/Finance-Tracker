@@ -67,4 +67,12 @@ const StyledTransactionList = styled.div`
     font-size: 0.9em;
     cursor: pointer;
   }
+
+  @media only screen and (max-width: 400px) {
+    li {
+      padding: 16px;
+      margin: 22px auto;
+      font-size: 0.8em;
+    }
+  }
 `;

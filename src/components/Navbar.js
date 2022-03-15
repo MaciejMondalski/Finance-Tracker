@@ -117,6 +117,24 @@ const StyledStickyNavbar = styled.nav`
       }
     }
   }
+
+  @media only screen and (max-width: 400px) {
+    .sticky-wrapper {
+      ul {
+        .title a {
+          font-size: 1.1em;
+        }
+
+        li {
+          margin: 0 8px;
+        }
+
+        .wrapper {
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
 `;
 
 export default Navbar;
