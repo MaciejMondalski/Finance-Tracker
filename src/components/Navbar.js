@@ -102,6 +102,9 @@ const StyledStickyNavbar = styled.nav`
     .sticky-wrapper {
       height: 3em;
 
+      width: 100%;
+      background: #d1e9ffff;
+
       ul {
         .title a {
           font-size: 1.4em;
