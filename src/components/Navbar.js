@@ -101,6 +101,7 @@ const StyledStickyNavbar = styled.nav`
 
     .sticky-wrapper {
       height: 3em;
+      background: #d1e9ffff;
 
       width: 100%;
       background: #d1e9ffff;
