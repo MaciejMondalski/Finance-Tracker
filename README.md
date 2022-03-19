@@ -1,4 +1,4 @@
-App preview: https://keen-edison-cd6b03.netlify.app/
+App preview: https://finance-tracker-b8060.web.app
 
 # Getting Started with Create React App
 
